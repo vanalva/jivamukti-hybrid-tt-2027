@@ -190,3 +190,15 @@ button.btn { cursor: pointer; font-family: inherit; }
   .tabs a { padding: 8px 12px; letter-spacing: 0.1em; }
   .tile .btn-s, .btn-s { width: auto; }
 }
+
+.tpl-set .el-head { align-items: flex-end; }
+.tpl-set .el-head .card-note { margin: 6px 0 0; }
+.tpl-strip { display: grid; grid-auto-flow: column; grid-auto-columns: 180px; gap: 14px; overflow-x: auto; padding-bottom: 10px; }
+.tpl-strip[data-set='posts'] { grid-auto-columns: 220px; }
+.tpl-strip[data-set='link'] { grid-auto-columns: 420px; }
+.tpl-item { display: flex; flex-direction: column; gap: 8px; color: var(--muted); font-size: 12px; font-weight: 600; text-decoration: none; }
+.tpl-item img { width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.12); }
+.tpl-item:hover { color: var(--orange); }
+.howto--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 860px) { .howto--2 { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .tpl-strip { grid-auto-columns: 150px; } .tpl-strip[data-set='posts'] { grid-auto-columns: 180px; } .tpl-strip[data-set='link'] { grid-auto-columns: 300px; } }

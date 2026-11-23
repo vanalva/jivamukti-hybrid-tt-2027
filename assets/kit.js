@@ -121,4 +121,14 @@ fetch('data.json').then((r) => r.json()).then((D) => {
     <p class="card-note">Weights in the kit: ${D.fonts.map((f) => esc(f.name)).join(', ')}. Titles and headings use ExtraBold in capitals with wide letter spacing; buttons and numbers Bold; dates SemiBold.</p>
     <div class="actions"><button type="button" class="btn btn-s" data-fz>Download fonts <small>ZIP</small></button><a class="btn ghost btn-s" href="https://fonts.google.com/specimen/Montserrat" target="_blank" rel="noopener">Google Fonts</a></div>`;
   $('[data-fz]').onclick = () => zip(D.fonts.map((f) => [base(f.href), f.href]), 'Montserrat');
+
+  // templates (boards kit: Canva/PowerPoint .pptx, Illustrator .ai, PNG)
+  for (const T of D.templates || []) {
+    const wrap = h(`<div class="el-group tpl-set"><div class="el-head"><div><h3 class="card-title">${esc(T.label)} <span class="count">${T.boards.length}</span></h3><p class="card-note">${esc(T.size)} px &middot; ${esc(T.use)}</p></div>
+      <div class="actions"><a class="btn btn-s" href="${url(T.pptx)}" download>Canva / PowerPoint <small>.pptx</small></a><a class="btn ghost btn-s" href="${T.ai}">Illustrator <small>ZIP &middot; ${T.aiMb} MB</small></a><button type="button" class="btn ghost btn-s" data-png>PNGs <small>ZIP</small></button></div></div>
+      <div class="tpl-strip" data-set="${esc(T.id)}"></div></div>`);
+    wrap.querySelector('[data-png]').onclick = () => zip(T.boards.map((b) => [base(b.png), b.png]), `Hybrid TT US 2027 - ${T.label} PNG`);
+    for (const b of T.boards) wrap.querySelector('.tpl-strip').append(h(`<a class="tpl-item" href="${url(b.png)}" target="_blank" rel="noopener"><img src="${url(b.thumb)}" width="${b.w}" height="${b.h}" loading="lazy" alt="${esc(T.label)}: ${esc(b.name)}"><span>${esc(b.name)}</span></a>`));
+    $('#tplSets').append(wrap);
+  }
 }).catch(() => { $('#logoGrid').innerHTML = '<p class="card-note">The kit did not load. Refresh the page to try again.</p>'; });
