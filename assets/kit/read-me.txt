@@ -1,0 +1,37 @@
+Hybrid TT US 2027 - Asset kit
+=============================
+
+Graphic elements of the Hybrid 300hr TT US 2027 flyers, poster and banners, to build stories, reels and posts on any platform.
+Every file is cut from the final print files, so it matches what was printed.
+
+FOLDERS
+01 Logos and title       300hr Teacher Training lockup, cobra, JIVAMUKTI YOGA logotype, QR code, title (3 lines, 1 line), dates, title + dates.
+                         Each in Orange, Charcoal, Light grey and White, on transparent and on the brand colours, plus versions
+                         "on-light" / "on-dark". SVG and PDF (vector, any size) and PNG (1024 and 2048 px). See contact-sheet.pdf.
+02 Elements              Buttons, Apply now / Find out more pills, QR with "Apply now", the five stat boxes, the five reasons,
+                         location, deposit, modules, "Who is this training for?" and testimonial cards, faculty cards (residential
+                         and online), headings, text blocks, footer bar. Transparent or on charcoal, SVG plus PNG 1080 and 2160 px wide.
+                         See contact-sheet.pdf.
+03 Social backgrounds    The title and the lockup centred on each brand colour at 1080x1080, 1080x1350, 1080x1920 and 1200x630.
+04 Photos                Class, location, residential and online faculty photos.
+05 Fonts                 Montserrat (SIL Open Font License, free to install). Also on Google Fonts.
+
+TIPS
+- Over video or photos use the transparent PNGs; for Canva or Illustrator use the SVGs (they scale without losing quality).
+- Instagram/Facebook: stories and reels 1080x1920, feed posts 1080x1350 or 1080x1080, link previews 1200x630.
+- Keep text and logos out of the top 250 px and bottom 340 px of a story or reel (Instagram covers them).
+- The QR code opens https://hybrid.jivamuktiyoga.com/us-2027/
+
+COLOURS
+Orange      #F7965E   RGB 247 150 94    CMYK 0 50 68 0
+Charcoal    #1A1A1A   RGB 26 26 26      CMYK 72 66 65 78
+Light grey  #DDDCDB   RGB 221 220 219   CMYK 12 9 10 0
+White       #FFFFFF
+
+TYPE
+Montserrat: ExtraBold for titles and names, Bold for buttons and numbers, SemiBold for dates and highlights, Regular / Light for text.
+Titles and headings are set in capitals with wide letter spacing.
+
+FACTS
+Online study: 3 months from June 2027. Residential: 10 day on-site intensive, September 17-26, 2027, Ananda Ashram, Monroe, NY.
+Registration closes May 3, 2027. $1500 deposit to hold your spot. hybrid.jivamuktiyoga.com/us-2027
